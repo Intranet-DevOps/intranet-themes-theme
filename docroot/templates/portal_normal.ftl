@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <#include init />
-
+ 
 <html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
 
 <head>
@@ -18,7 +18,7 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/intranet-themes-theme/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="/intranet-themes-theme/dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="/intranet-themes-theme/dist/css/skins/_all-skins.min.css">
@@ -34,8 +34,58 @@
   <link rel="stylesheet" href="/intranet-themes-theme/plugins/daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="/intranet-themes-theme/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-	   
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="/intranet-themes-theme/plugins/colorpicker/bootstrap-colorpicker.min.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="/intranet-themes-theme/plugins/timepicker/bootstrap-timepicker.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="/intranet-themes-theme/plugins/select2/select2.css">
   <link rel="stylesheet" href="/intranet-themes-theme/css/intranet.css">
+  
+<!-- jQuery 2.2.3 -->
+<script src="/intranet-themes-theme/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.6 -->
+<script src="/intranet-themes-theme/bootstrap/js/bootstrap.min.js"></script>
+<!-- Morris.js charts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="/intranet-themes-theme/plugins/morris/morris.min.js"></script>
+<!-- Sparkline -->
+<script src="/intranet-themes-theme/plugins/sparkline/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="/intranet-themes-theme/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="/intranet-themes-theme/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart --> 
+<script src="/intranet-themes-theme/plugins/knob/jquery.knob.js"></script>
+<!-- daterangepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="/intranet-themes-theme/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="/intranet-themes-theme/plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="/intranet-themes-theme/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="/intranet-themes-theme/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="/intranet-themes-theme/plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="/intranet-themes-theme/dist/js/app.min.js"></script>
+
+<!-- Select2 -->
+<script src="/intranet-themes-theme/plugins/select2/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="/intranet-themes-theme/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="/intranet-themes-theme/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="/intranet-themes-theme/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+  
+  
+  
 </head>
 
 
@@ -362,40 +412,6 @@
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
-
-<!-- jQuery 2.2.3 -->
-<script src="/intranet-themes-theme/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
-<!-- Bootstrap 3.3.6 -->
-<script src="/intranet-themes-theme/bootstrap/js/bootstrap.min.js"></script>
-<!-- Morris.js charts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="/intranet-themes-theme/plugins/morris/morris.min.js"></script>
-<!-- Sparkline -->
-<script src="/intranet-themes-theme/plugins/sparkline/jquery.sparkline.min.js"></script>
-<!-- jvectormap -->
-<script src="/intranet-themes-theme/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="/intranet-themes-theme/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="/intranet-themes-theme/plugins/knob/jquery.knob.js"></script>
-<!-- daterangepicker -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<script src="/intranet-themes-theme/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- datepicker -->
-<script src="/intranet-themes-theme/plugins/datepicker/bootstrap-datepicker.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="/intranet-themes-theme/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<!-- Slimscroll -->
-<script src="/intranet-themes-theme/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="/intranet-themes-theme/plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="/intranet-themes-theme/dist/js/app.min.js"></script>
 
 </body>
 
