@@ -84,7 +84,8 @@
 <script src="/intranet-themes-theme/plugins/input-mask/jquery.inputmask.extensions.js"></script>
 <!-- date-range-picker -->
   
-  
+<!-- iCheck -->
+<script src="/intranet-themes-theme/plugins/iCheck/icheck.min.js"></script>  
   
 </head>
 
