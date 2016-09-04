@@ -8,7 +8,22 @@
 	<li class="${nav_item_attr_selected} treeview" id="layout_${nav_item.getLayoutId()}">
 	
 		<a href="${nav_item.getURL()}" ${nav_item.getTarget()}>
-			<i class="fa fa-dashboard"></i> <span>${nav_item.getName()}</span>
+			<#if nav_item.getName() == "Timesheet">
+				<i class="fa fa-calendar-check-o"></i> 
+			</#if>
+			<#if nav_item.getName() == "Expenses">
+				<i class="fa fa-money"></i> 
+			</#if>
+			<#if nav_item.getName() == "Payroll">
+				<i class="fa fa-bank "></i> 
+			</#if>
+			<#if nav_item.getName() == "Leaves">
+				<i class="fa fa-plane"></i> 
+			</#if>
+			<#if nav_item.getName() == "Administration">
+				<i class="fa fa-user-secret"></i> 
+			</#if> 
+			<span>${nav_item.getName()}</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
