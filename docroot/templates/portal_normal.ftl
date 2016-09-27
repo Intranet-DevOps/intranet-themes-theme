@@ -42,6 +42,10 @@
   <link rel="stylesheet" href="/intranet-themes-theme/plugins/select2/select2.css">
   <link rel="stylesheet" href="/intranet-themes-theme/css/intranet.css">
   
+<script language="javascript">
+var INTRANET_USERID = '${user.getScreenName()}';
+</script>
+  
 <!-- jQuery 2.2.3 -->
 <script src="/intranet-themes-theme/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
